@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title> Assignment Day 2 </title>
+
+<meta charset='utf-8'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link type='text/css' href='bootstrap.css' rel='stylesheet'>
+
+<link type='text/css' href='' rel='stylesheet'>
+
+<style type="text/css">
+	
+	div {
+
+		border:0px solid red;
+		min-height: 50px;
+		background-color: orange;
+		font-family: corbreal;
+		}
+
+	#div{
+		text-align:center;
+		color:green;
+	}
+
+	#content{ font-size:1.0875em;
+
+	}
+
+
+</style>
+</head>
+
+
+<body id="mybody">
+	
+
+
+		<div class="container-fluid">
+			
+				<div class="row pl-4 mt-3 ml-4" id="div">
+					
+						<div class="col-sm"> 
+
+							<h2> 2019 / 2020 UTME Online result checker </h2>
+						
+						</div>
+
+
+				</div>
+
+
+
+				<div class = "row pl-4 mt-3 ml-4" id="content">
+					
+						<div class ="col-sm">
+							
+							<p class= "btn btn-outline-success mt-4 pt-4 pl-3" id ="trest"> </p> <br><br>
+							
+							<span> Have you written exam yet?</span>
+							<select id="kit">
+
+								<option value=""> --Select-- </option>
+								<option value="yes"> Yes </option>
+								<option value="no"> No </option>
+
+
+
+							</select>	
+
+							<select id="tit">
+
+								<option value="" class="btn btn-outline-success"> --Please Select Exam Center-- </option>
+								<option value="lagos"> Lagos </option>
+								<option value="osun"> Osun </option>
+
+							</select>
+
+								
+
+								<input type="button" class="btn btn-outline-success" value="Get My Result"
+								onclick=" 									
+
+								var exam = document.getElementById('kit').value;
+								var center = document.getElementById('tit').value;
+
+								if (exam=='yes' && center=='lagos')
+
+								{
+
+									document.getElementById('trest').innerHTML= 'Feedback on Assessment: Your total Score is 320'
+								}
+								
+
+								else if(exam=='' || center==''){
+
+									alert('Please make a selection');
+								}
+
+								else if (center=='osun')
+								
+								{
+									alert('score is not ready')
+								}
+								
+								else 
+								{ 
+
+									alert('Your result cannot be found')
+
+								}
+
+
+								">
+
+
+
+							
+						</div>
+
+					</div>
+
+						
+						<br><br><br>
+
+						<div class='row'>
+							
+
+							<div class='col'>
+								
+
+								<p> Are you coughing?</p>
+								
+
+								<select id="rob">
+									
+								<option value="yes"> Yes </option>
+								<option value="no"> No </option>
+
+
+
+								</select>
+
+							
+
+								<p> Did you travel out of Nigeria within the last 6 months? </p>
+
+								<select id="top">
+								
+								<option value="yes"> Yes </option>
+								<option value="no"> No </option>
+								
+								</select>
+
+
+								<input type="button" class="btn btn-outline-success" value="Diagnose"
+								onclick=" 									
+
+								var cough = document.getElementById('rob').value;
+								var travel = document.getElementById('top').value;
+
+								if ((cough=='yes') || (travel=='yes'))
+
+
+									[
+											alert('Please stay safe')
+
+										]
+
+								else {
+
+									alert('Please go for a test')
+								}
+
+								">
+
+							</div>
+
+
+
+
+						</div>
+
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>	
+
+
+
+
+
+
+
+
+
+
+
+<script type="">
+	
+		var cap = prompt('supply your favourite color');
+	
+	if( cap == '') {
+	
+		alert ('You did not supply anything');
+		document.getElementById('mybody').style.backgroundColor ='orange'
+	
+	}
+	
+	else {
+	
+	document.getElementById('mybody').style.backgroundColor =cap;
+	}
+
+
+
+</script>
+
+
+
+</body>
+
+
+</html>
